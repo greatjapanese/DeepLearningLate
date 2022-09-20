@@ -1,0 +1,473 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOhwvZIXWlTCEtxvEKqOBBN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/greatjapanese/DeepLearningLate/blob/main/0920%E9%96%A2%E6%95%B0%E5%AE%9A%E7%BE%A9\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "D4dScDL0bdHE"
+      },
+      "outputs": [],
+      "source": [
+        "#python3で関数を定義する\n",
+        "#関数定義"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#python3で関数を定義する\n",
+        "#関数定義"
+      ],
+      "metadata": {
+        "id": "-kP66PiQbzCT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#helloという関数を定義する\n",
+        "#\"hello,kansuu!\"と画面表示する関数\n",
+        "def hello():\n",
+        "  print('hello,kansuu!')#インデントされている\n",
+        "  #インデントされている命令文などは関数の範囲の中\n",
+        "print('test message!')#インデントされていない\n",
+        "#インデントされていない命令文などは関数の範囲の外\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BfvEz05dbxzp",
+        "outputId": "83ea97b8-6ed9-4aeb-c78b-18152e3c4b8d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "test message!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#作成したhello()をコールする\n",
+        "hello()\n",
+        "hello()"
+      ],
+      "metadata": {
+        "id": "Rd0a5PFReFjE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#引数付きの関数hello()を定義\n",
+        "def hello(who):\n",
+        "  print('hello.' + who + '!')\n",
+        "  #ここが関数の終わり\n",
+        "hello('python!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vZuICvdbe7Ko",
+        "outputId": "77a94cce-7739-404d-a0a1-03a3c6d90ab9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello.python!!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def hello(who, aisatsu):\n",
+        "  print('hello'+ who + 'さん' + aisatsu )\n",
+        "\n",
+        "hello('田中','おはよう')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Cq5hYxUff57k",
+        "outputId": "212eb58b-ca49-4ce7-eaae-0770a2f752a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello田中さんおはよう\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "3IBnHRxwhBJn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#関数の戻り値を定義する\n"
+      ],
+      "metadata": {
+        "id": "4wuK9SShiON7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "BtK2QmJ-i0gt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def helloback(who,aisatsu):\n",
+        "  return who + 'さん' + aisatsu\n",
+        "\n",
+        "x = helloback('佐藤','こんばんは')\n",
+        "print(x)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c1hlZGRDi0yX",
+        "outputId": "12e44ee7-2ff0-4170-ed90-5d06d3fca26b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "佐藤さんこんばんは\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def keisan(x,y):\n",
+        "  # x, y , x+yこの３つを返す\n",
+        "  return x, y, x+y\n",
+        "e, f, g = keisan(3,6)\n",
+        "print(e,f,g)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ha5_0pxPjgic",
+        "outputId": "35703cbb-05c2-441d-e227-8563dbeb6a63"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3 6 9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#if文の範囲もインデントで表す\n",
+        "def over(num,thres):\n",
+        "  if num > thres:\n",
+        "    print(str(num) + 'は' + str(thres) +'より大きい')\n",
+        "  else:\n",
+        "    print(str(num) + 'は' + str(thres) + '以下です')\n",
+        "  #分岐の終わり\n",
+        "#関数の終わり\n",
+        "over(333,100)\n",
+        "over(-1,10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-VGWIHgOkTZf",
+        "outputId": "1e7f1c3d-649c-4c13-c802-7a2d79554f51"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "333は100より大きい\n",
+            "-1は10以下です\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def include(list,keyword):\n",
+        "  uniq = set(list)\n",
+        "  if keyword in uniq:\n",
+        "    print(keyword + 'が含まれる')\n",
+        "  else:\n",
+        "    print(keyword + 'が含まれない')\n",
+        "\n",
+        "list_1 = ['アップル','ペン','ペン','パイナップル']\n",
+        "include(list_1,'パイナップル')\n",
+        "include(list_1,'バナナ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AQ2DuYNVoDHb",
+        "outputId": "9c421d99-58cc-4a1a-c068-b9bdc554f814"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "パイナップルが含まれる\n",
+            "バナナが含まれない\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def count(max):\n",
+        "  num = 0\n",
+        "  while num < max:\n",
+        "    print(num)\n",
+        "    num += 1\n",
+        "count(5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tmtQSXDOvzgz",
+        "outputId": "a22d8855-589d-4908-bb58-9d0602400e02"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#集合（コレクション）の中から取り出して繰り返し"
+      ],
+      "metadata": {
+        "id": "tkRorDlBzxAK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def every(array):\n",
+        "  for x in array:\n",
+        "    print(x)\n",
+        "\n",
+        "list = [1,2,3]\n",
+        "every(list)\n",
+        "tuple = (4,5,6)\n",
+        "every(tuple)\n",
+        "dict = { 'a':7,'b':8,'c':9 }\n",
+        "every(dict)\n",
+        "values = dict.values()\n",
+        "every(values)\n",
+        "every('dog')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Wn8oM9Qiyatn",
+        "outputId": "0843ccd1-11a9-410c-9cc5-6d87defabdb7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "a\n",
+            "b\n",
+            "c\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "d\n",
+            "o\n",
+            "g\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def count(num):\n",
+        "  for i in range(num):\n",
+        "    print(i)\n",
+        "count(3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uQt34YAb2sBy",
+        "outputId": "99169c66-ff62-412c-c1cf-a59bed32d480"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#ブルスク吐いてここで作業中断しました"
+      ],
+      "metadata": {
+        "id": "2qhOI87L4OAE"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def skip(array):\n",
+        "  for i in array:\n",
+        "    if i > 4:\n",
+        "      continue\n",
+        "    print(i)\n",
+        "\n",
+        "list = [1,2,3,4,5,1,2,3,4,5]\n",
+        "skip(list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aeYJgje16nA-",
+        "outputId": "ed564e00-c45d-4c86-dee3-6a017548554c"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Q0tmVbJe739m"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
